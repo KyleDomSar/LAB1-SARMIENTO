@@ -1,92 +1,381 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+
 * {
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    margin: 0;
-    padding: 40px 20px;
-    color: #333;
+html {
+    scroll-behavior: smooth;
 }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e8edf5;
+
+    background:
+        radial-gradient(circle at top left, #1e3a5f, transparent 40%),
+        radial-gradient(circle at bottom right, #14213d, transparent 40%),
+        #0b1120;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
 
 .container {
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 50px;
-    background-color: white;
+    width: min(1000px, 90%);
+    margin: 60px auto;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
     text-align: center;
+    padding: 60px 30px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.3);
+
+    margin-bottom: 25px;
+}
+
+
+.profile-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #38bdf8,
+        #2563eb
+    );
+
+    color: white;
+
+    font-size: 28px;
+    font-weight: bold;
+
+    box-shadow:
+        0 10px 30px rgba(56, 189, 248, 0.3);
+}
+
+
+.greeting {
+    color: #94a3b8;
+    margin-bottom: 8px;
+}
+
+
+.hero h1 {
+    margin: 0;
+
+    font-size: clamp(32px, 5vw, 52px);
+
+    color: white;
+}
+
+
+.role {
+    margin-top: 15px;
+
+    font-size: 18px;
+
+    color: #38bdf8;
+
+    font-weight: bold;
+}
+
+
+.school {
+    color: #94a3b8;
+
+    margin-top: 8px;
+}
+
+
+/* =========================
+   CARD SECTIONS
+========================= */
+
+.card {
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    margin-bottom: 20px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+
+    background: rgba(255, 255, 255, 0.09);
+}
+
+
+.card h2 {
+    margin-top: 0;
+
+    color: #38bdf8;
+
+    font-size: 26px;
+}
+
+
+.card > p {
+    color: #cbd5e1;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   HOBBIES
+========================= */
+
+.hobbies {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+
+.hobby {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    background: rgba(255, 255, 255, 0.05);
+
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
 }
 
-h1 {
-    color: #2c3e50;
-    font-size: 36px;
-    margin-bottom: 15px;
+
+.hobby:hover {
+    transform: translateY(-4px);
+
+    background: rgba(56, 189, 248, 0.12);
 }
 
-h2 {
-    color: #3498db;
-    margin-top: 30px;
-    margin-bottom: 12px;
+
+.hobby-number {
+    min-width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #1d4ed8;
+
+    color: white;
+
+    font-weight: bold;
 }
 
-p {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 17px;
-    line-height: 1.7;
+
+.hobby h3 {
+    margin: 0 0 8px;
+
+    color: white;
 }
 
-ul {
-    width: fit-content;
-    margin: 15px auto 25px;
-    text-align: left;
-    padding-left: 25px;
-    font-size: 17px;
+
+.hobby p {
+    margin: 0;
+
+    color: #94a3b8;
+
+    line-height: 1.5;
 }
 
-li {
-    margin: 10px 0;
+
+/* =========================
+   INTERACTION SECTION
+========================= */
+
+.interaction {
+    text-align: center;
+
+    padding: 45px 30px;
+
+    margin-top: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(37, 99, 235, 0.25),
+            rgba(56, 189, 248, 0.1)
+        );
+
+    border: 1px solid rgba(56, 189, 248, 0.2);
+
+    border-radius: 20px;
 }
+
+
+.interaction h2 {
+    margin-top: 0;
+
+    color: white;
+}
+
+
+.interaction > p {
+    color: #cbd5e1;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
 
 button {
-    padding: 12px 28px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
+    margin-top: 15px;
+
+    padding: 14px 30px;
+
     border: none;
-    border-radius: 6px;
-    background-color: #3498db;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #38bdf8,
+            #2563eb
+        );
+
     color: white;
-    transition: 0.3s;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
+
 
 button:hover {
-    background-color: #2980b9;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(56, 189, 248, 0.35);
 }
+
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   JAVASCRIPT MESSAGE
+========================= */
 
 #message {
-    margin-top: 20px;
+    min-height: 25px;
+
+    margin-top: 25px;
+
+    color: #38bdf8;
+
     font-weight: bold;
-    color: #2c3e50;
+
+    font-size: 17px;
 }
 
-@media (max-width: 600px) {
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 700px) {
 
     .container {
-        padding: 30px 20px;
+        margin: 30px auto;
     }
 
-    h1 {
-        font-size: 28px;
+    .hero {
+        padding: 45px 20px;
     }
 
-    p,
-    ul {
-        font-size: 16px;
+    .card {
+        padding: 25px;
     }
+
+    .hobbies {
+        grid-template-columns: 1fr;
+    }
+
 }

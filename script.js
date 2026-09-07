@@ -1,6 +1,26 @@
 const messageButton = document.getElementById("messageButton");
 const message = document.getElementById("message");
 
+let isMessageVisible = false;
+
 messageButton.addEventListener("click", function () {
-    message.textContent = "Thank you for visiting my introduction webpage!";
+
+    if (!isMessageVisible) {
+
+        message.textContent =
+            "Hello! Thank you for taking the time to visit my introduction webpage.";
+
+        messageButton.textContent = "Hide Message";
+
+        isMessageVisible = true;
+
+    } else {
+
+        message.textContent = "";
+
+        messageButton.textContent = "Say Hello";
+
+        isMessageVisible = false;
+    }
+
 });
