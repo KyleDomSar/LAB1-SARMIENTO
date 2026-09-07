@@ -5,123 +5,665 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Kyle Sarmiento | About Me</title>
+    <meta name="description"
+        content="Personal portfolio of Kyle Dominick Sarmiento, a BSIT student and aspiring developer.">
+
+    <title>Kyle Sarmiento | Developer Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <main class="container">
+    <!-- Background Effects -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
 
-        <!-- Profile Section -->
-        <section class="hero">
-            <div class="profile-icon">KS</div>
 
-            <p class="greeting">Hello, I'm</p>
+    <!-- Navigation -->
+    <header class="navbar">
 
-            <h1>Kyle Dominick Sarmiento</h1>
+        <a href="#home" class="logo">
+            <span>&lt;</span>KS<span>/&gt;</span>
+        </a>
 
-            <p class="role">
-                Bachelor of Science in Information Technology Student
-            </p>
+        <nav class="nav-links" id="navLinks">
 
-            <p class="school">
-                Cavite State University
-            </p>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="theme-button" id="themeButton" aria-label="Toggle theme">
+                ◐
+            </button>
+
+            <button class="menu-button" id="menuButton" aria-label="Open menu">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero section" id="home">
+
+            <div class="hero-content">
+
+                <p class="hero-tag">
+                    <span class="status-dot"></span>
+                    Available for learning and collaboration
+                </p>
+
+                <p class="intro-text">Hello, I'm</p>
+
+                <h1>
+                    Kyle Dominick
+                    <span>Sarmiento.</span>
+                </h1>
+
+                <h2 class="typing-text">
+                    <span id="typing"></span>
+                    <span class="cursor">|</span>
+                </h2>
+
+                <p class="hero-description">
+
+                    A Bachelor of Science in Information Technology student
+                    passionate about programming, web development, and
+                    building useful digital solutions.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="primary-button">
+                        View My Projects
+                    </a>
+
+                    <a href="#contact" class="secondary-button">
+                        Contact Me
+                    </a>
+
+                </div>
+
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>BSIT</strong>
+                        <span>Student</span>
+                    </div>
+
+                    <div>
+                        <strong>IT</strong>
+                        <span>Enthusiast</span>
+                    </div>
+
+                    <div>
+                        <strong>∞</strong>
+                        <span>Learning</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="avatar-ring">
+
+                    <div class="avatar">
+
+                        <span>K</span>
+                        <span>S</span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="code-card">
+
+                    <div class="code-header">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+
+                    <pre><code><span class="purple">const</span> developer = {
+
+  name: <span class="green">"Kyle"</span>,
+
+  role: <span class="green">"BSIT Student"</span>,
+
+  passion: [
+    <span class="green">"Programming"</span>,
+    <span class="green">"Technology"</span>
+  ]
+
+};</code></pre>
+
+                </div>
+
+            </div>
+
         </section>
 
 
         <!-- About Section -->
-        <section class="card">
-            <h2>About Me</h2>
+        <section class="section" id="about">
 
-            <p>
-                I am a third-year Bachelor of Science in Information Technology
-                student at Cavite State University. I am passionate about
-                technology and continuously improving my skills in programming
-                and other areas of Information Technology.
-            </p>
-        </section>
+            <div class="section-heading">
 
+                <p>01. ABOUT ME</p>
 
-        <!-- Interests Section -->
-        <section class="card">
-            <h2>My Interests</h2>
+                <h2>
+                    A little about
+                    <span>my journey.</span>
+                </h2>
 
-            <p>
-                I enjoy exploring new technologies, learning how different
-                systems work, and developing my knowledge in programming.
-                I believe that continuous learning is important in the
-                ever-changing world of technology.
-            </p>
-        </section>
+            </div>
 
 
-        <!-- Hobbies Section -->
-        <section class="card">
-            <h2>My Hobbies</h2>
+            <div class="about-grid">
 
-            <div class="hobbies">
+                <div class="about-text">
 
-                <div class="hobby">
-                    <span class="hobby-number">01</span>
-                    <div>
-                        <h3>Programming</h3>
-                        <p>Learning and improving my programming skills.</p>
-                    </div>
+                    <p>
+
+                        I am a third-year Bachelor of Science in Information
+                        Technology student at Cavite State University. I enjoy
+                        learning how technology works and how software can be
+                        used to solve real-world problems.
+
+                    </p>
+
+                    <p>
+
+                        My interests include programming, web development,
+                        databases, and software development. I continuously
+                        work on improving my technical knowledge by building
+                        projects and exploring new technologies.
+
+                    </p>
+
+                    <p>
+
+                        My goal is to become a skilled IT professional and
+                        developer capable of creating useful and reliable
+                        digital solutions.
+
+                    </p>
+
                 </div>
 
-                <div class="hobby">
-                    <span class="hobby-number">02</span>
-                    <div>
-                        <h3>Gaming</h3>
-                        <p>Playing different games during my free time.</p>
-                    </div>
-                </div>
 
-                <div class="hobby">
-                    <span class="hobby-number">03</span>
-                    <div>
-                        <h3>Movies and Series</h3>
-                        <p>Watching interesting movies and television series.</p>
-                    </div>
-                </div>
+                <div class="about-cards">
 
-                <div class="hobby">
-                    <span class="hobby-number">04</span>
-                    <div>
-                        <h3>Technology</h3>
-                        <p>Exploring new trends and topics about technology.</p>
+                    <div class="info-card">
+
+                        <span class="card-icon">⌘</span>
+
+                        <div>
+
+                            <h3>Problem Solving</h3>
+
+                            <p>
+                                Enjoy analyzing problems and finding practical
+                                technical solutions.
+                            </p>
+
+                        </div>
+
                     </div>
+
+
+                    <div class="info-card">
+
+                        <span class="card-icon">&lt;/&gt;</span>
+
+                        <div>
+
+                            <h3>Development</h3>
+
+                            <p>
+                                Interested in creating applications and
+                                improving programming skills.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <span class="card-icon">↗</span>
+
+                        <div>
+
+                            <h3>Continuous Learning</h3>
+
+                            <p>
+                                Always exploring new technologies and improving
+                                technical knowledge.
+                            </p>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
+
         </section>
 
 
-        <!-- Interactive Section -->
-        <section class="interaction">
+        <!-- Skills Section -->
+        <section class="section" id="skills">
 
-            <h2>Get to Know Me</h2>
+            <div class="section-heading">
 
-            <p>
-                Click the button below to display a message.
-            </p>
+                <p>02. SKILLS</p>
 
-            <button id="messageButton">
-                Say Hello
-            </button>
+                <h2>
+                    Technologies I am
+                    <span>learning and using.</span>
+                </h2>
 
-            <p id="message"></p>
+            </div>
+
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">☕</div>
+
+                    <h3>Java</h3>
+
+                    <p>
+                        Object-oriented programming and application development.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">HTML</div>
+
+                    <h3>HTML</h3>
+
+                    <p>
+                        Building structured and accessible webpages.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">CSS</div>
+
+                    <h3>CSS</h3>
+
+                    <p>
+                        Creating responsive and modern user interfaces.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">JS</div>
+
+                    <h3>JavaScript</h3>
+
+                    <p>
+                        Adding interactivity and functionality to websites.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">SQL</div>
+
+                    <h3>MySQL / SQL</h3>
+
+                    <p>
+                        Working with databases and managing data.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">PHP</div>
+
+                    <h3>PHP</h3>
+
+                    <p>
+                        Learning server-side web development.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">Git</div>
+
+                    <h3>Git & GitHub</h3>
+
+                    <p>
+                        Version control and project collaboration.
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">UI</div>
+
+                    <h3>Figma</h3>
+
+                    <p>
+                        Designing interfaces and planning user experiences.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+
+            <div class="section-heading">
+
+                <p>03. PROJECTS</p>
+
+                <h2>
+                    Things I have
+                    <span>built and worked on.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="project-filters">
+
+                <button class="filter active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter" data-filter="java">
+                    Java
+                </button>
+
+                <button class="filter" data-filter="web">
+                    Web
+                </button>
+
+                <button class="filter" data-filter="design">
+                    Design
+                </button>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+                <article class="project-card" data-category="java">
+
+                    <div class="project-image project-java">
+
+                        <span>JAVA GAME</span>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">JAVA DEVELOPMENT</p>
+
+                        <h3>Space Invaders Game</h3>
+
+                        <p>
+
+                            A 2D Space Invaders-inspired game developed using
+                            Java with gameplay mechanics, levels, lives,
+                            scoring, and sound effects.
+
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Java</span>
+                            <span>OOP</span>
+                            <span>Game Development</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card" data-category="web">
+
+                    <div class="project-image project-web">
+
+                        <span>WEB PROJECT</span>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">WEB DEVELOPMENT</p>
+
+                        <h3>Personal Portfolio</h3>
+
+                        <p>
+
+                            A responsive personal portfolio website created to
+                            showcase skills, projects, education, and technical
+                            interests.
+
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card" data-category="design">
+
+                    <div class="project-image project-design">
+
+                        <span>UI / UX</span>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <p class="project-type">PROJECT CONCEPT</p>
+
+                        <h3>OrgHub</h3>
+
+                        <p>
+
+                            A proposed platform concept focused on helping
+                            organizations manage information and improve
+                            communication and coordination.
+
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Figma</span>
+                            <span>UI Design</span>
+                            <span>System Concept</span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Education Section -->
+        <section class="section" id="education">
+
+            <div class="section-heading">
+
+                <p>04. EDUCATION</p>
+
+                <h2>
+                    My academic
+                    <span>background.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-content">
+
+                        <p class="timeline-date">PRESENT</p>
+
+                        <h3>
+                            Bachelor of Science in Information Technology
+                        </h3>
+
+                        <h4>Cavite State University</h4>
+
+                        <p>
+
+                            Currently pursuing a degree in Information
+                            Technology while developing skills in programming,
+                            web development, databases, and software
+                            development.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+
+            <div class="contact-content">
+
+                <p class="contact-label">05. CONTACT</p>
+
+                <h2>
+                    Let's build something
+                    <span>great together.</span>
+                </h2>
+
+                <p>
+
+                    Feel free to connect with me for collaboration,
+                    projects, or opportunities to learn and grow.
+
+                </p>
+
+
+                <div class="contact-buttons">
+
+                    <a href="https://github.com/KyleDomSar"
+                        target="_blank"
+                        class="primary-button">
+
+                        View GitHub
+
+                    </a>
+
+                    <button class="secondary-button"
+                        id="copyEmailButton">
+
+                        Copy Email
+
+                    </button>
+
+                </div>
+
+
+                <p id="copyMessage" class="copy-message"></p>
+
+            </div>
 
         </section>
 
     </main>
 
+
+    <!-- Back To Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        ↑
+    </button>
+
+
+    <!-- Footer -->
     <footer>
-        <p>Laboratory 1 | Git, GitHub, and Branching</p>
+
+        <p>
+            Designed and built by
+            <span>Kyle Dominick Sarmiento</span>
+        </p>
+
+        <p class="footer-code">
+            &lt;/&gt; Built with HTML, CSS & JavaScript
+        </p>
+
     </footer>
+
 
     <script src="script.js"></script>
 
